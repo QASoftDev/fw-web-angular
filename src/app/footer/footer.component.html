@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<mat-toolbar color="primary" class="footer">
+
+  <div class="data-footer">
+    <div>
+      <span >
+        <i class="material-icons">copyright</i>
+         Copyrigth 2023 - Todos os direitos reservados
+      </span>
+    </div>
+
+    <div>
+      <span  [hidden]="this.isShowContact">
+        <i class="material-icons">contact_mail</i>
+          rodrigoacevedo@outlook.com
+      </span>
+    </div>
+
+
+    <div>
+      <span >
+        Desenvolvido por <strong>{{author}}</strong>
+      </span>
+    </div>
+
+  </div>
+</mat-toolbar>
+
