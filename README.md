@@ -34,6 +34,8 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 
 ## Protótipo
 
+https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=design&node-id=442%3A40&t=cKEwHlrRNjDyNrAl-1
+
 ## Checklist
 
 - [x] Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
