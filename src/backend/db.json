@@ -1,0 +1,28 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "nome": "Evento 1",
+      "local": "Local 1",
+      "data": "2019-01-01",
+      "tipo": "Tipo 1",
+      "confirmado": true
+    },
+    {
+      "id": 2,
+      "nome": "Evento 2",
+      "local": "Local 2",
+      "data": "2019-01-02",
+      "tipo": "Tipo 2",
+      "confirmado": false
+    },
+    {
+      "nome": "veio do form update",
+      "local": "form",
+      "data": "01/01/2023",
+      "tipo": "festa",
+      "confirmado": true,
+      "id": 3
+    }
+  ]
+}
