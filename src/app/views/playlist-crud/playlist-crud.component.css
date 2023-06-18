@@ -6,6 +6,7 @@ form {
 button {
   margin-top: 20px;
   margin-right: 15px;
+  margin-bottom: 20px;
 }
 
 .mat-input-element:focus::placeholder {
@@ -22,4 +23,20 @@ button {
 .label-input {
   font-size: 1.1rem;
   margin-top: 5px;
+}
+
+table {
+  width: 100%;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+.edit > i {
+  color: #d9cd26;
+}
+
+.delete > i {
+  color: #d92626;
 }
