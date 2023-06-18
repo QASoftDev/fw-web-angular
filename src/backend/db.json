@@ -23,6 +23,57 @@
       "tipo": "festa",
       "confirmado": true,
       "id": 3
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Clube da Festa",
+      "data": "",
+      "tipo": "Teste",
+      "confirmado": true,
+      "id": 4
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Danceteria D",
+      "data": "",
+      "tipo": "este",
+      "confirmado": true,
+      "id": 5
+    }
+  ],
+  "temas": [
+    {
+      "id": 1,
+      "nome": "Balada Sertaneja Universiotaria",
+      "descricao": "Teste de Sertaneja"
+    },
+    {
+      "id": 2,
+      "nome": "Aniversário",
+      "descricao": "Festa de aniversário para qualquer idade"
+    },
+    {
+      "id": 3,
+      "nome": "Carnaval",
+      "descricao": "Festa com  temas carnavalescos"
+    }
+  ],
+  "playlists": [
+    {
+      "id": 1,
+      "nome": "Playlist de samba"
+    },
+    {
+      "nome": "Teste de Teste",
+      "id": "5c10196a-4932-4582-96cc-aff28b5c5371"
+    },
+    {
+      "nome": "Lentas e Paixão",
+      "id": "28981c00-be8c-43bd-a9f0-b45aabcaec48"
+    },
+    {
+      "nome": "Teste teste Teste",
+      "id": "286eac52-18cd-4981-b3e8-c653d7689cd7"
     }
   ]
 }
