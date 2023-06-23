@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TemaService } from '../tema.service';
+//import { TemaService } from '../tema.service';
+import { TemaService } from '../tema.service-promise';
 import { Tema } from '../tema.model';
 
 @Component({
@@ -14,11 +15,18 @@ export class TemaReadComponent implements OnInit {
 
   displayedColumns = ['id', 'nome', 'descricao', 'acoes'];
 
+  //constructor(private temaService: TemaService) {}
   constructor(private temaService: TemaService) {}
 
   ngOnInit(): void {
-    this.temaService.read().subscribe((temas: Tema[]) => {
-      this.temas = temas;
-    });
+    this.temaService
+      .read()
+      .then((t: Tema[]) => {
+        console.log('Passou aqui no read', t);
+        this.temas = t;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 }

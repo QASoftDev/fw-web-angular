@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tema } from '../tema.model';
-import { TemaService } from '../tema.service';
+import { TemaService } from '../tema.service-promise';
+// import { TemaService } from '../tema.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,10 +20,23 @@ export class TemaCreateComponent implements OnInit {
   ngOnInit(): void {}
 
   createTema(): void {
-    this.temaService.create(this.tema).subscribe(() => {
-      this.temaService.showMessage('Tema criado!');
-      this.router.navigate(['/temas']);
-    });
+    this.temaService
+      .create(this.tema)
+      .then((t: Tema) => {
+        // debugger;
+        console.log('Passou aqui no create', t);
+        this.tema = t;
+        this.temaService.showMessage('Tema criado!');
+        this.router.navigate(['/temas']);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    //   .subscribe(() => {
+    //   this.temaService.showMessage('Tema criado!');
+    //   this.router.navigate(['/temas']);
+    // });
   }
 
   cancel(): void {
