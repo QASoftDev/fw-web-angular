@@ -33,7 +33,6 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 ## Endereço de Deploy - GitHub Pages
 
 ## Protótipo
-
 https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=design&node-id=442%3A40&t=cKEwHlrRNjDyNrAl-1
 
 ## Checklist
@@ -55,7 +54,7 @@ https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=des
 - [x] Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [x] Usar a diretiva ngIf
 - [x] Formatar a apresentação de dados com Pipes.
-- [] Build e deploy da aplicação.
+=======
 
 ## Manual de execução
 
