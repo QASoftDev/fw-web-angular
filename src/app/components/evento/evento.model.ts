@@ -4,5 +4,6 @@ export interface Evento {
   local: string;
   data: string;
   tipo: string;
+  playlist: string;
   confirmado: boolean;
 }

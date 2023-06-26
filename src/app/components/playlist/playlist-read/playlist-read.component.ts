@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Playlist } from 'src/app/views/playlist-crud/playlist.model';
+
+import { Playlist } from '../playlist.model';
 import { PlaylistService } from '../playlist.service';
 
 @Component({

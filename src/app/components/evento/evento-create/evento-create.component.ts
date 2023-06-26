@@ -12,6 +12,8 @@ import {
   MAT_DATE_FORMATS,
   MAT_DATE_LOCALE,
 } from '@angular/material/core';
+import { PlaylistService } from '../../playlist/playlist.service';
+import { Playlist } from '../../playlist/playlist.model';
 
 @Component({
   selector: 'app-evento-create',
@@ -20,21 +22,31 @@ import {
   providers: [],
 })
 export class EventoCreateComponent implements OnInit {
+  playlists: Playlist[] = [];
+  selectedValue: string = '';
   evento: Evento = {
     nome: '',
     local: '',
     data: '',
     tipo: '',
+    playlist: '',
     confirmado: false,
   };
 
   constructor(
     private eventoService: EventoService,
+    private playlistService: PlaylistService,
     private router: Router,
     private _adapter: DateAdapter<any>
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(
+    playlists = this.playlistService
+      .read()
+      .subscribe((playlists: Playlist[]) => {
+        this.playlists = playlists;
+      })
+  ): void {}
 
   createEvento(): void {
     this.eventoService.create(this.evento).subscribe(() => {

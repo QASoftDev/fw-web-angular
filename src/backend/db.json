@@ -2,32 +2,32 @@
   "eventos": [
     {
       "id": 1,
-      "nome": "Evento 1",
-      "local": "Local 1",
-      "data": "2019-01-01",
-      "tipo": "Tipo 1",
-      "confirmado": true
+      "nome": "Evento Teste",
+      "local": " Teste 2000",
+      "data": "2023-08-14T03:00:00.000Z",
+      "tipo": "Tipo de eWento",
+      "confirmado": true,
+      "playlist": {
+        "id": 1,
+        "nome": "Playlist de Samba Dance"
+      }
     },
     {
       "id": 2,
-      "nome": "Evento 2",
-      "local": "Local 2",
-      "data": "2019-01-02",
-      "tipo": "Tipo 2",
-      "confirmado": false
-    },
-    {
-      "nome": "veio do form update",
-      "local": "form",
-      "data": "01/01/2023",
-      "tipo": "festa",
+      "nome": "Evento Ne",
+      "local": "Local Ne",
+      "data": "2024-03-13T03:00:00.000Z",
+      "tipo": "Tipo Mr",
       "confirmado": true,
-      "id": 3
+      "playlist": {
+        "nome": "Teste de Play List 3000",
+        "id": 2
+      }
     },
     {
       "nome": "Teste de Festa",
       "local": "Clube da Festa",
-      "data": "",
+      "data": "2023-07-18T03:00:00.000Z",
       "tipo": "Teste",
       "confirmado": true,
       "id": 4
@@ -35,17 +35,53 @@
     {
       "nome": "Teste de Festa",
       "local": "Danceteria D",
-      "data": "",
+      "data": "2023-06-26T03:00:00.000Z",
       "tipo": "este",
       "confirmado": true,
       "id": 5
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Boteco do Bonfa",
+      "data": "2023-06-30T03:00:00.000Z",
+      "tipo": "Festa",
+      "confirmado": true,
+      "id": 6
+    },
+    {
+      "nome": "Teste Novo",
+      "local": "Teste Novo",
+      "data": "2023-06-28T03:00:00.000Z",
+      "tipo": "Teste Novo",
+      "confirmado": true,
+      "id": 7
+    },
+    {
+      "nome": "Festa 1teste",
+      "local": "Festa 1teste",
+      "data": "2023-06-25T03:00:00.000Z",
+      "tipo": "Teste",
+      "confirmado": true,
+      "id": 8
+    },
+    {
+      "nome": "Teste de playlist",
+      "local": "Cas ada sogra",
+      "data": "2023-06-30T03:00:00.000Z",
+      "tipo": "Festere foda",
+      "playlist": {
+        "nome": "Teste de Play List 3000",
+        "id": 2
+      },
+      "confirmado": true,
+      "id": 10
     }
   ],
   "temas": [
     {
       "id": 1,
-      "nome": "Balada Sertaneja Universiotaria",
-      "descricao": "Teste de Sertaneja"
+      "nome": "Balada Sertaneja Universiotaria Teste",
+      "descricao": "Teste de Sertaneja mais vezes"
     },
     {
       "id": 2,
@@ -56,24 +92,25 @@
       "id": 3,
       "nome": "Carnaval",
       "descricao": "Festa com  temas carnavalescos"
+    },
+    {
+      "nome": "Festa da Primavera",
+      "descricao": "Festa da prom200",
+      "id": 4
     }
   ],
   "playlists": [
     {
       "id": 1,
-      "nome": "Playlist de samba"
+      "nome": "Playlist de Samba Dance"
     },
     {
-      "nome": "Teste de Teste",
-      "id": "5c10196a-4932-4582-96cc-aff28b5c5371"
+      "nome": "Teste de Play List 3000",
+      "id": 2
     },
     {
-      "nome": "Lentas e Paixão",
-      "id": "28981c00-be8c-43bd-a9f0-b45aabcaec48"
-    },
-    {
-      "nome": "Teste teste Teste",
-      "id": "286eac52-18cd-4981-b3e8-c653d7689cd7"
+      "nome": "Festa Party de dance ano 2000",
+      "id": 3
     }
   ]
 }
