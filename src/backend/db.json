@@ -66,12 +66,12 @@
     },
     {
       "nome": "Teste de playlist",
-      "local": "Cas ada sogra",
+      "local": "Casa da sogra",
       "data": "2023-06-30T03:00:00.000Z",
       "tipo": "Festere foda",
       "playlist": {
-        "nome": "Teste de Play List 3000",
-        "id": 2
+        "nome": "Festa da Terceira Idade",
+        "id": 4
       },
       "confirmado": true,
       "id": 10
@@ -111,6 +111,10 @@
     {
       "nome": "Festa Party de dance ano 2000",
       "id": 3
+    },
+    {
+      "nome": "Festa da Terceira Idade",
+      "id": 4
     }
   ]
 }
