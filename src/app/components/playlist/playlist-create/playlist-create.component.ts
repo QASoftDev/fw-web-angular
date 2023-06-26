@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Playlist } from 'src/app/views/playlist-crud/playlist.model';
+
+import { Playlist } from '../playlist.model';
 import { PlaylistService } from '../playlist.service';
 
 @Component({
@@ -22,6 +23,7 @@ export class PlaylistCreateComponent implements OnInit {
 
   createPlaylist() {
     this.playlistService.create(this.playlist).subscribe(() => {
+      console.log('Chamou createPlaylist');
       this.playlistService.showMessage('Playlist criada!');
       this.router.navigate(['/playlists']);
     });

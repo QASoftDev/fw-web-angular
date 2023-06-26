@@ -15,6 +15,7 @@ import { PlaylistCrudComponent } from './views/playlist-crud/playlist-crud.compo
 import { ThemeCrudComponent } from './views/theme-crud/theme-crud.component';
 import { TemaUpdateComponent } from './components/tema/tema-update/tema-update.component';
 import { TemaDeleteComponent } from './components/tema/tema-delete/tema-delete.component';
+import { SobreComponent } from './views/sobre/sobre.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'playlists/delete/:id',
     component: PlaylistDeleteComponent,
+  },
+  {
+    path: 'sobre',
+    component: SobreComponent,
   },
 ];
 

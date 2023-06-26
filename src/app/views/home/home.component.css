@@ -6,4 +6,38 @@
 
 .home .subtitle {
   font-size: 1.1rem;
+  color: #000;
+}
+
+.subtitle-pos {
+  font-size: 1.2rem;
+  color: green;
+}
+
+.icon-size-pos {
+  vertical-align: middle;
+  width: 1rem;
+  color: green;
+}
+
+.subtitle-neg {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.icon-size-neg {
+  vertical-align: middle;
+  width: 1rem;
+  color: red;
+}
+
+.div-info {
+  layout: flex;
+}
+
+.li-info {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.2;
 }

@@ -17,6 +17,7 @@ export class EventoReadComponent implements OnInit {
     'local',
     'data',
     'tipo',
+    'playlist',
     'confirmado',
     'acoes',
   ];
@@ -25,6 +26,7 @@ export class EventoReadComponent implements OnInit {
 
   ngOnInit(): void {
     this.eventoService.read().subscribe((eventos: Evento[]) => {
+      console.log('Lista de eventos', eventos);
       this.eventos = eventos;
     });
   }

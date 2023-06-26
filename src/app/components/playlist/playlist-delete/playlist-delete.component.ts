@@ -12,6 +12,31 @@ import { PlaylistService } from '../playlist.service';
 export class PlaylistDeleteComponent implements OnInit {
   playlist: Playlist = {} as Playlist;
 
+  //   constructor(
+  //     private playlistService: PlaylistService,
+  //     private router: Router,
+  //     private route: ActivatedRoute
+  //   ) {}
+
+  //   ngOnInit(): void {
+  //     const id = this.route.snapshot.paramMap.get('id');
+  //     this.playlistService.readById(id as string).subscribe((playlist) => {
+  //       this.playlist = playlist;
+  //     });
+  //   }
+
+  //   deleteplaylist(): void {
+  //     this.playlistService.delete(this.playlist.id as number).subscribe(() => {
+  //       this.playlistService.showMessage('Playlist excluída com sucesso!');
+  //       this.router.navigate(['/playlists']);
+  //     });
+  //   }
+
+  //   cancel(): void {
+  //     this.router.navigate(['/playlists']);
+  //   }
+  // }
+
   constructor(
     private playlistService: PlaylistService,
     private router: Router,
@@ -26,8 +51,8 @@ export class PlaylistDeleteComponent implements OnInit {
   }
 
   deleteplaylist(): void {
-    this.playlistService.delete(this.playlist.id as string).subscribe(() => {
-      this.playlistService.showMessage('Playlist excluída com sucesso!');
+    this.playlistService.delete(this.playlist.id as number).subscribe(() => {
+      this.playlistService.showMessage('playlist excluído com sucesso!');
       this.router.navigate(['/playlists']);
     });
   }

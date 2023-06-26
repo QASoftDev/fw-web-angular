@@ -11,7 +11,7 @@
       type="text"
       placeholder="Preencha o Nome do Evento"
       [(ngModel)]="evento.nome"
-      pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
+      pattern="(\s?[A-ZÀ-Ú][a-zà-ú]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)+"
       #nome="ngModel"
       required
       />
@@ -26,39 +26,24 @@
       matInput
       placeholder="Local"
       [(ngModel)]="evento.local"
-      pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+"
+      pattern="(\s?[A-ZÀ-Ú][a-zà-ú]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)+"
       #local="ngModel"
       required
       />
     </mat-form-field>
     <div class="danger-text" [hidden]="local.valid || local.untouched" >Por favor informar o nome do evento</div>
 
-    <!-- <label class="label-input" for="nome">Data do Evento *</label>
-    <mat-form-field appearance="outline">
-      <input
-      id="data"
-      name="data"
-      type="text"
-      matInput
-      placeholder="Data"
-      [(ngModel)]="evento.data"
-       pattern="[^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$]*"
-      #data="ngModel"
-      required
-      />
-    </mat-form-field>
-    <div class="danger-text" [hidden]="data.valid || data.untouched" >Por favor informar uma data valida para o evento</div> -->
-
 
     <label class="label-input" for="nome">Data do Evento</label>
     <mat-form-field appearance="outline">
-      <input  id="data" name="data" matInput [matDatepicker]="picker" placeholder="Escolha  data do evento">
+      <input  id="data"
+      name="data"
+      matInput
+      [matDatepicker]="picker"
+      [(ngModel)]="evento.data"
+      placeholder="Escolha  data do evento">
       <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
-
-      <!-- <mat-error *ngIf="studentForm.get('dateOfBirth').hasError('required')">
-        Valid date required.
-      </mat-error>     -->
     </mat-form-field>
 
 
@@ -70,11 +55,25 @@
       matInput
       placeholder="Tipo"
       [(ngModel)]="evento.tipo"
-       pattern="[a-zA-Z ]*"
+       pattern="(\s?[A-ZÀ-Ú][a-zà-ú]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)+"
       #tipo="ngModel"
       required
       />
     </mat-form-field>
+
+    <label class="label-input" for="nome">Selecione a Playlist desejada *</label>
+    <mat-form-field appearance="outline">
+      <mat-label>Selecione uma playlist</mat-label>
+      <mat-select [(ngModel)]="evento.playlist" name="playlist">
+        <mat-option *ngFor="let playlist of playlists" [value]="playlist">
+          {{playlist.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p> Selected playlist: {{selectedValue}} </p>
+
+
+
     <div class="danger-text" [hidden]="tipo.valid || tipo.untouched" >Por favor informar o nome do evento</div>
 
 

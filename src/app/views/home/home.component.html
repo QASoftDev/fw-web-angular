@@ -6,3 +6,29 @@
     Sistema de controles de festas e eventos para DJ's
   </mat-card-subtitle>
 </mat-card>
+
+<mat-card class="home mat-elevationz3"  >
+  <div class="div-info" *ngIf="eventos.length > 0">
+    <mat-card-title class="information">
+        Próximos Eventos
+      </mat-card-title>
+      <mat-card-subtitle class="subtitle-pos">
+        Teremos eventos a acontecer!  <i class="material-icons icon-size-pos">
+          mood
+        </i>
+    </mat-card-subtitle>
+      <ul>
+        <li class="li-info" *ngFor="let evento of eventos"> Nome do evento : {{evento.nome}} => Data do evento: {{evento.data | date : 'dd/MM/yyyy'}}</li>
+      </ul>
+
+  </div>
+
+  <div *ngIf="!eventos.length">
+    <mat-card-subtitle class="subtitle-neg">
+    Não teremos eventos a acontecer !  <i class="material-icons icon-size-neg">
+          sentiment_dissatisfied
+        </i>
+    </mat-card-subtitle>
+  </div>
+</mat-card>
+
