@@ -1,0 +1,120 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "nome": "Evento Teste",
+      "local": " Teste 2000",
+      "data": "2023-08-14T03:00:00.000Z",
+      "tipo": "Tipo de eWento",
+      "confirmado": true,
+      "playlist": {
+        "id": 1,
+        "nome": "Playlist de Samba Dance"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Evento Ne",
+      "local": "Local Ne",
+      "data": "2024-03-13T03:00:00.000Z",
+      "tipo": "Tipo Mr",
+      "confirmado": true,
+      "playlist": {
+        "nome": "Teste de Play List 3000",
+        "id": 2
+      }
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Clube da Festa",
+      "data": "2023-07-18T03:00:00.000Z",
+      "tipo": "Teste",
+      "confirmado": true,
+      "id": 4
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Danceteria D",
+      "data": "2023-06-26T03:00:00.000Z",
+      "tipo": "este",
+      "confirmado": true,
+      "id": 5
+    },
+    {
+      "nome": "Teste de Festa",
+      "local": "Boteco do Bonfa",
+      "data": "2023-06-30T03:00:00.000Z",
+      "tipo": "Festa",
+      "confirmado": true,
+      "id": 6
+    },
+    {
+      "nome": "Teste Novo",
+      "local": "Teste Novo",
+      "data": "2023-06-28T03:00:00.000Z",
+      "tipo": "Teste Novo",
+      "confirmado": true,
+      "id": 7
+    },
+    {
+      "nome": "Festa 1teste",
+      "local": "Festa 1teste",
+      "data": "2023-06-25T03:00:00.000Z",
+      "tipo": "Teste",
+      "confirmado": true,
+      "id": 8
+    },
+    {
+      "nome": "Teste de playlist",
+      "local": "Casa da sogra",
+      "data": "2023-06-30T03:00:00.000Z",
+      "tipo": "Festere foda",
+      "playlist": {
+        "nome": "Festa da Terceira Idade",
+        "id": 4
+      },
+      "confirmado": true,
+      "id": 10
+    }
+  ],
+  "temas": [
+    {
+      "id": 1,
+      "nome": "Balada Sertaneja Universiotaria Teste",
+      "descricao": "Teste de Sertaneja mais vezes 2"
+    },
+    {
+      "id": 2,
+      "nome": "Aniversário",
+      "descricao": "Festa de aniversário para qualquer idade"
+    },
+    {
+      "id": 3,
+      "nome": "Carnaval",
+      "descricao": "Festa com  temas carnavalescos"
+    },
+    {
+      "nome": "Festa da Primavera",
+      "descricao": "Festa da prom200",
+      "id": 4
+    }
+  ],
+  "playlists": [
+    {
+      "id": 1,
+      "nome": "Playlist de Samba Dance"
+    },
+    {
+      "nome": "Teste de Play List 3000",
+      "id": 2
+    },
+    {
+      "nome": "Festa Party de dance ano 2000",
+      "id": 3
+    },
+    {
+      "nome": "Festa da Terceira Idade",
+      "id": 4
+    }
+  ]
+}

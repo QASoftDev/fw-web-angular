@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-title>Confirmar Exclusão de um Tema</mat-card-title>
+  <form #form="ngForm" >
+    <label class="label-input" for="nome" >Nome do Tema</label>
+    <mat-form-field appearance="outline">
+      <input
+      id="nome"
+      name="nome"
+      class="validate"
+      matInput
+      type="text"
+      placeholder="Preencha o Nome do tema"
+      [(ngModel)]="tema.nome"
+     disabled
+      />
+    </mat-form-field>
+
+    <label class="label-input" for="nome" >Descrição</label>
+    <mat-form-field appearance="outline">
+      <input
+      id="descricao"
+      name="descricao"
+      matInput
+      placeholder="Preencha a descrição do Tema"
+      [(ngModel)]="tema.descricao"
+      disabled
+      />
+    </mat-form-field>
+
+
+  </form>
+  <button mat-raised-button (click)="deleteTema()" color="warn">
+    Excluir
+  </button>
+
+  <button mat-raised-button (click)="cancel()" >
+    Cancelar
+  </button>
+</mat-card>
+
+
+
+

@@ -1,0 +1,90 @@
+<mat-card>
+  <mat-card-title>Alterar Evento</mat-card-title>
+
+    <form #form="ngForm" >
+    <label class="label-input" for="nome">Nome do Evento *</label>
+    <mat-form-field appearance="outline">
+      <input
+      id="nome"
+      name="nome"
+      class="validate"
+      matInput
+      type="text"
+      placeholder="Preencha o Nome do Evento"
+      [(ngModel)]="evento.nome"
+      pattern="(\s?[A-ZÀ-Ú][a-zà-ú]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)+"
+      #nome="ngModel"
+      required
+      />
+    </mat-form-field>
+    <div class="danger-text" [hidden]="nome.valid || nome.untouched" >Por favor informar o nome do evento</div>
+
+    <label class="label-input" for="nome">Local do Evento *</label>
+    <mat-form-field appearance="outline">
+      <input
+      id="local"
+      name="local"
+      matInput
+      placeholder="Local"
+      [(ngModel)]="evento.local"
+      pattern="(\s?[A-ZÀ-Ú][a-zà-ú]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)?(\s[?A-Za-z0-9][a-zà-ú0-9]*)+"
+      #local="ngModel"
+      required
+      />
+    </mat-form-field>
+    <div class="danger-text" [hidden]="local.valid || local.untouched" >Por favor informar o nome do evento</div>
+
+
+    <label class="label-input" for="nome">Data do Evento</label>
+    <mat-form-field appearance="outline">
+      <input  id="data"
+      name="data"
+      matInput
+      [matDatepicker]="picker"
+      [(ngModel)]="evento.data"
+      placeholder="Escolha  data do evento">
+      <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+
+    <label class="label-input" for="nome">Tema do Evento *</label>
+    <mat-form-field appearance="outline">
+      <input
+      id="tipo"
+      name="tipo"
+      matInput
+      placeholder="Tipo"
+      [(ngModel)]="evento.tipo"
+       pattern="[a-zA-Z ]*"
+      #tipo="ngModel"
+      required
+      />
+    </mat-form-field>
+    <div class="danger-text" [hidden]="tipo.valid || tipo.untouched" >Por favor informar o nome do evento</div>
+
+    <label class="label-input" for="nome">Selecione a Playlist desejada *</label>
+    <mat-form-field appearance="outline">
+      <mat-label>Selecione uma playlist</mat-label>
+      <mat-select [(ngModel)]="evento.playlist" name="playlist">
+        <mat-option *ngFor="let playlist of playlists" [value]="playlist">
+          {{playlist.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p> Selected playlist: {{selectedValue}} </p>
+
+      <mat-checkbox [(ngModel)]="evento.confirmado" name="confirmado">Confirmado</mat-checkbox>
+
+  </form>
+  <button mat-raised-button (click)="updateEvento()" [disabled]="!form.valid" color="primary">
+    Salvar
+  </button>
+
+  <button mat-raised-button (click)="cancel()" >
+    Cancelar
+  </button>
+</mat-card>
+
+
+
