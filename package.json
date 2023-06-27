@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href=/events4dj/",
-    "hgpages": "angular-cli-ghpages --dir=dist/events4dj/",
-    "deploy": "npm run build && npm run hgpages",
+    "clean": "rm -rf dist",
+    "build": "ng build --prod --base-href=/fw-web-angular/",
+    "ghpages": "angular-cli-ghpages --no-silent --dir=dist/events4dj/",
+    "deploy": "npm run build && npm run ghpages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dbserver": "json-server --watch ./src/backend/db.json",
