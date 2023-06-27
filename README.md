@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/events4dj` directory.
 
 ## Running unit tests
 
@@ -32,7 +32,10 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 
 ## Endereço de Deploy - GitHub Pages
 
+https://racevedobr.github.io/fw-web-angular/
+
 ## Protótipo
+
 https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=design&node-id=442%3A40&t=cKEwHlrRNjDyNrAl-1
 
 ## Checklist
@@ -53,8 +56,7 @@ https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=des
 - [x] Cadastrar uma entidade no JSON Server.
 - [x] Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [x] Usar a diretiva ngIf
-- [x] Formatar a apresentação de dados com Pipes.
-=======
+- [x] # Formatar a apresentação de dados com Pipes.
 
 ## Manual de execução
 
@@ -63,6 +65,6 @@ https://www.figma.com/file/yEllulGvRMigCWLZVMHKGg/Prototipo-Web-Angular?type=des
 - Abrir o projeto no editor Visual Studio Code (VS Code)
 - Abrir um terminal pelo VSCode e executar a API Fake (JSON Server) via o seguinte comando:
   - Comando: `npm run json-server --watch db.json --routes routes.json`
-  - O comando deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo `db.json` e `routes.json`.
+  - O comando deve ser aplicado no diretório "/src/backend", ou seja, que contém o arquivo `db.json` e `routes.json`.
 - Abrir um novo terminal pelo VSCode e então executar o projeto Angular
   - Comando: `ng s`
