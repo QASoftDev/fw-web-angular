@@ -30,6 +30,11 @@ Este projeto tem como objetivo implementar as funcionalidades da platafor Events
 
 O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
+## Endereço do vídeo no Youtube
+
+https://youtu.be/ynty5gkvycs
+
+
 ## Endereço de Deploy - GitHub Pages
 
 https://racevedobr.github.io/fw-web-angular/
